@@ -6,6 +6,9 @@ document.getElementById('contact-form').addEventListener('submit', function(e) {
     var subject = document.getElementById('subject').value;
     var phone = document.getElementById('phone').value;
     var message = document.getElementById('message').value;
+
+    console.log("Contact Data Recived Successfully");
+    console.log(name, email, subject, phone, message);
   
     var url = 'https://docs.google.com/forms/d/e/1FAIpQLScgpkTyU9AvhILQCcf6o3eicwL2fbxZArTiQMYIrNNMPcMjLA/formResponse';
   
