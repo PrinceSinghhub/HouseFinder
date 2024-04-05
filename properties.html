@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="icon" href="assets/images/housefindr-logo.png">
+  <title>Rental Homes- Property Listing by HouseFinder</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Additional CSS Files -->
+  <link rel="stylesheet" href="assets/css/fontawesome.css">
+  <link rel="stylesheet" href="assets/css/mainPage.css">
+  <link rel="stylesheet" href="assets/css/owl.css">
+  <link rel="stylesheet" href="assets/css/animate.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  
+</head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <div class="sub-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-8">
+          <ul class="info">
+            <li><i class="fa fa-envelope"></i>housefinderteam.org</li>
+            <li><i class="fa fa-map"></i>Hariom Rajput & Mahendra Singh Panwar</li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-4">
+          <ul class="social-links">
+            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+            <a href="index.html" class="logo">
+              <h1>HouseFinder</h1>
+            </a>
+            <!-- ***** Logo End ***** -->
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="properties.html" class="active">Rental Properties</a></li>
+              <!-- <li><a href="property-details.html">Property Details</a></li> -->
+              <li><a href="contact.html">Contact Us</a></li>
+              <li style="visibility: hidden;"><a href="#"><i class="fa fa-calendar"></i> Schedule a visit</a></li>
+            </ul>
+            <a class='menu-trigger'>
+              <span>Menu</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <div class="page-heading header-text">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <span class="breadcrumb"><a href="#">Home</a> /Rental Properties</span>
+          <h3>Rental Properties</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section properties">
+    <div class="container">
+      <ul class="properties-filter">
+        <li>
+          <a class="is_active" href="#!" data-filter="*">Show All</a>
+        </li>
+        <li>
+          <a href="#!" data-filter=".adv">Family Friendly</a>
+        </li>
+        <li>
+          <a href="#!" data-filter=".str">Budget Friendly</a>
+        </li>
+        <li>
+          <a href="#!" data-filter=".rac">For Students</a>
+        </li>
+      </ul>
+      <div class="row properties-box">
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6 adv">
+          <div class="item">
+            <img src="assets/images/Rent 1.jpg" alt="">
+            <span class="category">Family Friendly</span>
+            <h6>8000/month</h6>
+            <h4><a href="#">Near IT Park</a></h4>
+            <ul>
+              <li>Bedrooms: <span>4</span></li>
+              <li>Bathrooms: <span>2</span></li>
+              <li>Area: <span>800m2</span></li>
+              <!-- <li>Floor: <span>3</span></li> -->
+              <li>Parking: <span>3 spots</span></li>
+            </ul>
+            <div class="main-button">
+            <a href="scheduleVisit.html?property=40/49 Nanak Nagar, Bholaram Ustad Marg, Indore&price=8000/month&bedrooms=4&bathrooms=2&area=800m2" class="main-button">Schedule a visit</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6 rac">
+          <div class="item">
+            <img src="assets/images/Rent 2.jpg" alt="">
+            <span class="category">Student Friendly</span>
+            <h6>5000/month</h6>
+            <h4><a href="#">Near Bholaram Ustad Marg</a></h4>
+            <ul>
+              <li>Bedrooms: <span>2</span></li>
+              <li>Bathrooms: <span>1</span></li>
+              <li>Area: <span>1BHK</span></li>
+              <li>Floor: <span>3</span></li>
+              <li>Parking: <span>1 spots</span></li>
+            </ul>
+            <div class="main-button">
+              <a href="scheduleVisit.html?property=50/49 Nanak Nagar, Bholaram Ustad Marg, Indore&price=5000/month&bedrooms=2&bathrooms=1&area=1BHK" class="main-button">Schedule a visit</a>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6 adv rac">
+          <div class="item">
+            <a href="property-details.html"><img src="assets/images/Rent 3.jpg" alt=""></a>
+            <span class="category">Apartment</span>
+            <h6>3000/month</h6>
+            <h4><a href="property-details.html">373/b Surya Dev Nagar/a></h4>
+            <ul>
+              <li>Bedrooms: <span>2</span></li>
+              <li>Bathrooms: <span>1</span></li>
+              <li><span>1BHK</span></li>
+              <li>Floor: <span>3</span></li>
+              <li>Parking: <span>2 spots</span></li>
+            </ul>
+            <div class="main-button">
+              <a href="property-details.html">Schedule a visit</a>
+            </div>
+          </div>
+        </div> -->
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6 adv">
+          <div class="item">
+            <img src="assets/images/Rent 4.jpg" alt="">
+            <span class="category">Family Friendly</span>
+            <h6>6000/month</h6>
+            <h4><a href="#">Near Annapurna Road</a></h4>
+            <ul>
+              <li>Bedrooms: <span>3</span></li>
+              <li>Bathrooms: <span>2</span></li>
+              <li>Area: <span>600m2</span></li>
+              <!-- <li>Floor: <span>25th</span></li> -->
+              <li>Parking: <span>2 spots</span></li>
+            </ul>
+            <div class="main-button">
+              <a href="scheduleVisit.html?property=48/B Bank Colony, Indore&price=6000/month&bedrooms=3&bathrooms=2&area=600m2" class="main-button">Schedule a visit</a>
+              
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6 rac adv str">
+          <div class="item">
+            <img src="assets/images/Rent 3.jpg" alt="">
+            <span class="category">Apartment</span>
+            <h6>3000/month</h6>
+            <h4>373/b Surya Dev Nagar</h4>
+            <ul>
+              <li>Bedrooms: <span>2</span></li>
+              <li>Bathrooms: <span>1</span></li>
+              <li><span>1BHK</span></li>
+              <li>Floor: <span>3</span></li>
+              <li>Parking: <span>2 spots</span></li>
+            </ul>
+            <div class="main-button">
+              <a href="scheduleVisit.html?property=373/B Surya Dev Nagar, Indore&price=3000/month&bedrooms=2&bathrooms=1&area=1BHK" class="main-button">Schedule a visit</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6 str adv">
+          <div class="item">
+            <img src="assets/images/Rent 5.jpg" alt="">
+            <span class="category">Budget Friendly</span>
+            <h6>4000/month</h6>
+            <h4><a href="#">85/b Surya Dev Nagar, Indore</a></h4>
+            <ul>
+              <li>Bedrooms: <span>4</span></li>
+              <li>Bathrooms: <span>2</span></li>
+              <li>Area: <span>800m2</span></li>
+              <li>Floor: <span>1</span></li>
+              <li>Parking: <span>2 spots</span></li>
+            </ul>
+            <div class="main-button">
+              <a href="scheduleVisit.html?property=85/B Surya Dev Nagar, Indore&price=4000/month&bedrooms=4&bathrooms=2&area=800m2" class="main-button">Schedule a visit</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6 adv str">
+          <div class="item">
+            <a href="#"><img src="assets/images/Rent 6.jpg" alt=""></a>
+            <span class="category">Family Friendly</span>
+            <h6>5000/month</h6>
+            <h4>75/b Surya Dev Nagar</h4>
+            <ul>
+              <li>Bedrooms: <span>2</span></li>
+              <li>Bathrooms: <span>2</span></li>
+              <li>Area: <span>600m2</span></li>
+              <li>Floor: <span>1</span></li>
+              <li>Parking: <span>2 spots</span></li>
+            </ul>
+            <div class="main-button">
+              <a href="scheduleVisit.html?property=75/B Surya Dev Nagar, Indore&price=5000/month&bedrooms=2&bathrooms=2&area=600m2" class="main-button">Schedule a visit</a>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6 rac adv">
+          <div class="item">
+            <a href="property-details.html"><img src="assets/images/property-02.jpg" alt=""></a>
+            <span class="category">Luxury Villa</span>
+            <h6>XYZ</h6>
+            <h4><a href="property-details.html">Near Central Mall</a></h4>
+            <ul>
+              <li>Bedrooms: <span>12</span></li>
+              <li>Bathrooms: <span>15</span></li>
+              <li>Area: <span>380m2</span></li>
+              <li>Floor: <span>3</span></li>
+              <li>Parking: <span>14 spots</span></li>
+            </ul>
+            <div class="main-button">
+              <a href="property-details.html">Schedule a visit</a>
+            </div>
+          </div>
+        </div> -->
+        <!-- <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6 rac adv">
+          <div class="item">
+            <a href="property-details.html"><img src="assets/images/property-01.jpg" alt=""></a>
+            <span class="category">Luxury Villa</span>
+            <h6>XYZ</h6>
+            <h4><a href="property-details.html">Near Central Mall</a></h4>
+            <ul>
+              <li>Bedrooms: <span>10</span></li>
+              <li>Bathrooms: <span>12</span></li>
+              <li>Area: <span>860m2</span></li>
+              <li>Floor: <span>3</span></li>
+              <li>Parking: <span>10 spots</span></li>
+            </ul>
+            <div class="main-button">
+              <a href="property-details.html">Schedule a visit</a>
+            </div>
+          </div>
+        </div> -->
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <ul class="pagination">
+            <li><a href="#">1</a></li>
+            <li><a class="is_active" href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">>></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="col-lg-12">
+        <p>Copyright © 2024 Sage University Indore. </p>
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/js/isotope.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/counter.js"></script>
+  <script src="assets/js/custom.js"></script>
+
+</body>
+
+</html>
