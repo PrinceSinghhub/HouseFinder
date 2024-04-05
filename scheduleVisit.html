@@ -97,16 +97,22 @@
         </div>
         <h2>Schedule a Visit</h2>
         <form id="visit-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" name="phone">
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email">
             <label for="property">Property:</label>
-            <input type="text" id="property" name="property" readonly>
+            <input type="text" id="property" name="property">
             <label for="price">Rent:</label>
-            <input type="text" id="price" name="price" readonly>
+            <input type="text" id="price" name="price">
             <label for="bedrooms">Bedrooms:</label>
-            <input type="text" id="bedrooms" name="bedrooms" readonly>
+            <input type="text" id="bedrooms" name="bedrooms">
             <label for="bathrooms">Bathrooms:</label>
-            <input type="text" id="bathrooms" name="bathrooms" readonly>
+            <input type="text" id="bathrooms" name="bathrooms">
             <label for="area">Area:</label>
-            <input type="text" id="area" name="area" readonly>
+            <input type="text" id="area" name="area">
             <label for="timing">Select Timing:</label>
             <select id="timing" name="timing">
                 <option value="Select Time Slot">Select Time Slot</option>
@@ -117,7 +123,7 @@
                 <option value="16:00-18:00">4:00 PM - 6:00 PM</option>
                 <option value="18:00-20:00">6:00 PM - 8:00 PM</option>
             </select>
-            <button type="submit">Submit</button>
+            <button type="button" id="submit-button" onclick="submitForm()">Submit</button>
         </form>
     </div>
 
@@ -125,6 +131,57 @@
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
     <!-- JavaScript to autofill the form -->
+
+    <script>
+        function submitForm() {
+            // Get the form values
+            var name = document.getElementById('name').value;
+            var phone = document.getElementById('phone').value;
+            var email = document.getElementById('email').value;
+            var property = document.getElementById('property').value;
+            var price = document.getElementById('price').value;
+            var bedrooms = document.getElementById('bedrooms').value;
+            var bathrooms = document.getElementById('bathrooms').value;
+            var area = document.getElementById('area').value;
+            var timing = document.getElementById('timing').value;
+    
+            // Log the form values to the console
+            console.log("VisitedData Recived Successfully")
+            console.log(name, phone, email, property, price, bedrooms, bathrooms, area, timing);
+        
+            // Create the form data
+            var formData = new FormData();
+            formData.append('entry.2058447733', name);
+            formData.append('entry.1256949069', phone);
+            formData.append('entry.209073646', email);
+            formData.append('entry.948161634', property);
+            formData.append('entry.671512451', price);
+            formData.append('entry.219323911', bedrooms);
+            formData.append('entry.1476982680', bathrooms);
+            formData.append('entry.1346373907', area);
+            formData.append('entry.53797366', timing);
+        
+            // Change the button text
+            var button = document.getElementById('submit-button');
+            button.innerHTML = 'Visit Scheduled';
+        
+            // Change the button text back to 'Submit' after 1 second
+            setTimeout(function() {
+                button.innerHTML = 'Submit';
+            }, 1000);
+        
+            // Send the form data to the Google Form
+            fetch('https://docs.google.com/forms/d/e/1FAIpQLScooqaPm1RoNfgrPTfxmLGXQeL7MUzZAA4OW55zOeTQ3Q8DZg/formResponse', {
+                method: 'POST',
+                body: formData,
+                mode: 'no-cors'
+            }).then(function(response) {
+                console.log('Form submission successful');
+            }).catch(function(error) {
+                console.error('Error:', error);
+            });
+        }
+    </script>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             // Get the URL parameters
